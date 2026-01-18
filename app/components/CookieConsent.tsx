@@ -3,6 +3,14 @@
 import { useState, useEffect } from "react";
 import { X } from "lucide-react";
 
+// Declare gtag function on window object
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+    dataLayer?: unknown[];
+  }
+}
+
 export default function CookieConsent() {
   const [consent, setConsent] = useState<boolean | null>(null);
   const [isVisible, setIsVisible] = useState(false);
