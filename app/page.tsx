@@ -1,8 +1,14 @@
-"use client";
-
 import Link from "next/link";
+import { Metadata } from "next";
 import ProductCard from "@/app/components/ProductCard";
 import { products } from "@/app/lib/products";
+
+// Metadata for Home page
+export const metadata: Metadata = {
+  title: "Home - LaserHub",
+  description: "Professional laser cutting and engraving equipment store. High-quality laser systems for businesses and hobbyists.",
+  keywords: "laser cutter, laser engraver, laser equipment, professional laser systems",
+};
 
 export default function Home() {
   const featuredProducts = products.slice(0, 4);

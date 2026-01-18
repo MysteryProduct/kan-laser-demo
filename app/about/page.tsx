@@ -1,4 +1,11 @@
-"use client";
+import { Metadata } from "next";
+
+// Metadata for About page
+export const metadata: Metadata = {
+  title: "About Us - LaserHub",
+  description: "Learn about LaserHub, your trusted provider of professional laser cutting and engraving equipment since 2010.",
+  keywords: "about LaserHub, laser equipment company, professional laser solutions",
+};
 
 export default function AboutPage() {
   return (
